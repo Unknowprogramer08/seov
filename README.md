@@ -1,5 +1,5 @@
 # seov
-
+Origianl project is - [AcidCaos Social Emperors](https://github.com/AcidCaos/socialemperors)
 This is register and login html files 
 1. Upload login.html and play.html to templates folder.
 2. Upload bundle.py & server.py & sessions.py & .env to main folder.
