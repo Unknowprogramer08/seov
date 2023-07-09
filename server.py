@@ -35,7 +35,7 @@ from quests import get_quest_map
 from bundle import ASSETS_DIR, STUB_DIR, TEMPLATES_DIR, BASE_DIR, SAVES_DIR_BACKUP
 
 host = '0.0.0.0'
-site = 'erasuke.com'
+site = ' IP HERE '
 port = 5050
 
 app = Flask(__name__, template_folder=TEMPLATES_DIR)
