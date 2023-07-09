@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8"/>
+        <!-- Title and Icon -->
+        <title id="pageTitle">Social Empires</title>
+        <link rel="shortcut icon" href="https://mima2370.github.io/socialemperors/templates/img/icon.gif"/>
+        <link rel="icon" type="image/png" href="https://mima2370.github.io/socialemperors/templates/img/icon.gif"/>
+    </head>
+    <body style="font-family: 'lucida grande',tahoma,verdana,arial,sans-serif; background-image: url('https://cdnb.artstation.com/p/assets/images/images/043/163/227/original/augustin-cart-gif-lofi-final.gif?1636484521'); background-repeat: no-repeat; background-size: cover;">
+    <center>
+        <!-- SESSION HEADER -->
+        <div id="header" style="width: 760px; margin-top: 50px; display:inline-block;">
+            <div id="session" style="float: right; text-align:right; display:block;">
+                <p style="display:inline">Logged in as <b>{{save_info.name}}</b> lvl {{save_info.level}} (<a href="/">logout</a>)</p>
+                <br>
+                <p style="display:inline">Your User ID is <b>{{save_info.userid}}</b></p>
+                <br>
+                <p style="display:inline">Tip: Regularly make a backup of your account using the button below!</p>
+            </div>
+        </div>
+        <br>
+        <!-- GAME BAR -->
+        <div id="gameBar" style="margin-top: 15px;">
+            <!-- GAME BAR TOP -->
+            <div id="gamebar_top" style="width: 760px; height: 90px;">
+                <div style="float: left; margin-left:155px; padding: 4px; font-size: 10pt">
+                    <!-- VERSION -->
+                    <br><br><br>
+                    <p style="display: inline">{{ version }}</p>
+                </div>
+            </div>
+            <!-- GAME BAR BUTTONS -->
+            <div id="gamebar_buttons" style="width: 760px;">
+                &nbsp;
+                <a class="gameBarButton" href="#"><div><img src="https://cdn.jsdelivr.net/gh/AcidCaos/socialemperors/templates/img/gift.png">Free Gifts</div></a>
+                <a class="gameBarButton gameBarButtonSelected" href="#"><div><img>Play</div></a>
+                <a class="gameBarButton" href="#"><div><img src="https://cdn.jsdelivr.net/gh/AcidCaos/socialemperors/templates/img/cash.png">Get Cash</div></a>
+                <a class="gameBarButton" href="https://discord.gg/8KFYWne6dF" target="_blank"><div><img src="https://cdn.jsdelivr.net/gh/AcidCaos/socialemperors/templates/img/discord.png">Discord</div></a>
+                <a class="gameBarButton" href="https://github.com/AcidCaos/socialemperors#readme" target="_blank"><div><img src="https://cdn.jsdelivr.net/gh/AcidCaos/socialemperors/templates/img/github.png">GitHub</div></a>
+                <a class="gameBarButton" href="http:// ip here:5050/saves/{{save_info.userid}}.save.json" download="FileName" target="_blank"><div><img src="https://mima2370.github.io/socialemperors/templates/img/backup.png">Backup</div></a>
+<a class="gameBarButton" href="http:// ip here :5055/" target="_blank"><div><img src="img/worker.png">Play Social Wars NOW!</div></a>
+            </div>
+            <style>
+                #gameBar {
+                    text-align: left;
+                    width: 760px;
+                    margin-bottom: 0px;
+                    padding: 0px;
+                    background-color:rgb(137, 187, 15);
+                    background-image: url('https://mima2370.github.io/socialemperors/templates/img/Gamebar_byTrevo.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-bottom: solid #6e5335 3px;
+                }
+                .gameBarButton {
+                    display: inline-block;
+                    height: 19px;
+                    color: black;
+                    border: solid 1.5px;
+                    border-color: #9e7747;
+                    background-color:rgb(255, 245, 131);
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 11pt;
+                    padding: 2px 3px 1px 3px; 
+                }
+
+                .gameBarButtonSelected {
+                    background-color:rgb(233, 221, 81);
+                }
+
+                .gameBarButton img {
+                    height: 17px;
+                    padding-right: 3px;
+                    vertical-align: middle;
+                }
+
+                .gameBarButton:hover {
+                    background-color:rgb(250, 237, 90);
+                    text-decoration: none;
+                }
+
+                .gameBarButtonSelected:hover {
+                    background-color:rgb(223, 212, 82);
+                }
+
+            </style>
+        </div>
+        <!-- EMBED GAME -->
+        <object>
+            <param name="AllowScriptAccess" value="always">
+            <embed
+                src="http://cdn.jsdelivr.net/gh/Mima2370/socialemperors/assets/flash/SELoader.swf?swftoload=http://cdn.jsdelivr.net/gh/Mima2370/socialemperors/assets/flash/SocialEmpires0926bsec.swf" 
+                allowFullScreen="true" bgcolor="#669C2C" quality=high WIDTH="760" HEIGHT="600" NAME="se" ALIGN=""
+                TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" AllowScriptAccess='always'
+                flashvars='spdebug=notnull&brk=0
+                &staticUrl=http://cdn.jsdelivr.net/gh/Mima2370/socialemperors/assets/&brk=0
+                &dynamicUrl=http:// ip here :5050/dynamic.flash1.dev.socialpoint.es/appsfb/socialempiresdev/srvempires/&brk=0
+                &skiphash12341=notnull&brk=0
+                &fb_sig_user={{save_info.userid}}&brk=0
+                &user_key=123456789&brk=0
+                &language=en&brk=0
+                &accessToken=AAABbZAm0wdMUBALsOrR0Ho68CLjaOT8SV3vftKg9mbo1zZColaW5FljRVaLxPGxXXnm1M98mTZCAttcQ4GHwvSyXfsyxYmvKMH8Hmn5iliSPnjvIsZAi&brk=0
+                &playerID={{save_info.userid}}&brk=0
+                &appID=480840936574458&brk=0
+                &swf_name=social_empires&brk=0
+                &cdnUrl=http://cdn.jsdelivr.net/gh/Mima2370/socialemperors/assets/&brk=0
+                &debug=1'>
+            </embed>
+        </object>
+    </center>
+    </body>
+</html>
